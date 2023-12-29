@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: darkmagenta;
+}
+
+.container {
+    margin-top: 15px;
+    height: 156px;
+}
+
+.heading h1 {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+.main-content {
+    background-color: white;
+    min-height: 90vh;
+    width: 650px;
+    margin: 10px auto 0px auto;
+    border: 2px solid darkmagenta;
+    border-radius: 12px;
+}
+
+.main-content h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.first-password span {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin-left: 3px;
+    margin-top: 5px;
+    display: none;
+    margin-top: -29px;
+}
+
+.main-content hr {
+    background-color: darkmagenta;
+    height: 1px;
+    border: none;
+    margin-top: 17px;
+}
+
+.first-input span {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin-left: 3px;
+    margin-top: 5px;
+    display: none;
+    margin-top: -29px;
+}
+
+.clear-btn {
+    width: 20%;
+    margin: 10px auto 0px auto;
+    display: none;
+}
+
+.clear-btn button {
+    width: 100%;
+    background-color: darkmagenta;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    border-radius: 9px;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.input1 {
+    /* background-color: red; */
+    height: 55px;
+    width: 575px;
+    margin: 15px auto 0px auto;
+}
+.first-input input {
+    width: 555px;
+    height: 55px;
+    border: 1px solid white;
+    border-bottom-color: black;
+    font-size: 14px;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-right: 0px; 
+    color: black;
+}
+.input1 input {
+    width: 555px;
+    height: 55px;
+    border: 1px solid white;
+    border-bottom-color: black;
+    font-size: 14px;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 35px;
+    padding-right: 0px;
+    color: black;
+    margin-top: 20px;
+}
+
+.input1 input:focus {
+    outline: lightblue 1px solid;
+}
+
+.input1 button {
+    width: 100%;
+    padding: 15px;
+    background-color: darkmagenta;
+    border-radius: 19px;
+    border: none;
+    margin-top: 55px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.input1 button:active {
+    background-color: white;
+    border: 1px solid darkmagenta;
+    color: darkmagenta;
+}
+
+.input1 p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+
+
+.cofirm-password input {
+    width: 555px;
+    height: 55px;
+    border: 1px solid white;
+    border-bottom-color: black;
+    font-size: 14px;
+    padding-left: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 15px;
+    /* margin-bottom: 2px;  */
+    padding-right: 0px;
+    color: black;
+    /* background-color: red;  */
+}
+
+.cofirm-password input {
+
+    margin-bottom: 0px;
+    margin-left: 0px;
+
+}
+
+.cofirm-password span {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin-left: 3px;
+    margin-top: 5px;
+    display: none;
+}
+.message p {
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.input1 p {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 320px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .main-content {
+        max-width: 100%;
+        max-height: 100%;
+        border: none;
+        margin: 15px auto 0px auto;
+    }
+
+    .input1 input {
+        max-width: 87vi;
+        margin-left: 20px;
+        height: 45px;
+        font-size: 11px;
+        margin-top: 7px;
+        margin-bottom: 25px;
+        padding-right: 0px;
+        padding-left: 2px;
+        max-height: fit-content;
+    }
+    .first-input{
+       
+        max-width: 83vi;
+        height: 35px;
+        font-size: 11px;
+        margin-top: 0px;
+        margin-bottom: 45px;
+        padding-right: 0px;
+        
+       
+    }
+    .heading h1 {
+        color: white;
+        max-width: 100%;
+        font-size: 25px;
+
+    }
+
+    .input1 button {
+        width: 100vi;
+        text-align: center;
+        padding: 15px;
+        margin-top: 25px;
+        color: white;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .input1 p {
+        width: 98vi;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 13px;
+    }
+
+    .main-cont-header h1 {
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size: 25px;
+       margin-top: 20px;
+       padding-top: 45px;
+
+    }
+    .main-content hr {
+        max-width: 86vi;
+        margin-left: 20px;
+    }
+
+    .heading h1 {
+        width: 98%;
+        margin-top: 15px;
+    
+    }
+    .message p {
+        text-align: center;
+        margin-top: 70px;
+    }
+    .first-input span {
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 11px;
+        margin-left: 20px;
+        margin-top: 5px;
+        display: none;
+        margin-top: -21px;
+    }
+    .first-password span {
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 11px;
+        margin-left: 20px;
+        margin-top: 5px;
+        display: none;
+        margin-top: -21px;
+    }
+    .cofirm-password span {
+        color: red;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 11px;
+        margin-left: 20px;
+        margin-top: 5px;
+        display: none;
+        margin-top: -21px;
+    }
+    .clear-btn {
+        width: 70%;
+        height: 100%;
+        margin: 10px auto 0px auto;
+        display: none;
+    } 
+    
+    .clear-btn button {
+        width: 100%;
+        background-color: darkmagenta;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        border-radius: 10px;
+        border: none;
+        padding: 7px;
+        cursor: pointer;
+    }
+}

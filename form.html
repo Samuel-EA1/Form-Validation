@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading" id="myHeading">
+            <h1>Form Validation</h1>
+        </div> 
+         <div class="main-content">
+            <div class="main-cont-header">
+                <h1 id="registerID">Register</h1>
+            </div>
+            
+            <div>
+                <hr>
+            </div> 
+
+            <h1 style="display: block; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 35px;" id="welcome"></h1>
+            <div class="clear-btn" id="clear-Btn">
+                <button onclick="clearStorage()">Log Out</button>
+            </div> 
+            
+
+            <form class="input1" onsubmit="formSubmit(event)" id="form">
+                <div class="first-input">
+                <input type="text" placeholder="Enter Username (minimum of 15 characters)" id="user-name" oninput="confirmUsername(event)"><span id="error_message1">No space allowed in username field & username should not exceed 15 characters</span></div>
+                 <input type="email" placeholder="Enter email" id="email-input" required/>
+                <div class="first-password">
+                <input type="password" placeholder="Enter password (minimum of 8 characters)" id="pass1" oninput="passwordCharCheck(event)"><span id="error-message2">Password must contain 8 characters and above</span></div>
+                <div class="cofirm-password">
+                <input type="password" placeholder="Confirm password (minimum of 8 characters)" id="pass2" oninput="passwordConfirmHandler(event)"  required><span id="error-message">Password does not match</span>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p>Ensure you fill in your details correctly</p> 
+                <div class="message">
+                    <p>Created by  Samuel E. A.</p>
+                </div>
+        </div>
+    </div>
+
+   <script src="form.js"></script>
+</body>
+</html>
