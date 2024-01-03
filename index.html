@@ -28,12 +28,12 @@
 
             <form class="input1" onsubmit="formSubmit(event)" id="form">
                 <div class="first-input">
-                <input type="text" placeholder="Enter Username (minimum of 15 characters)" id="user-name" oninput="confirmUsername(event)"><span id="error_message1">No space allowed in username field & username should not exceed 15 characters</span></div>
+                <input type="text" placeholder="Enter Username (maximum of 15 characters)" id="user-name" oninput="confirmUsername(event)" required><span id="error_message1">No space allowed in username field & username should not exceed 15 characters</span></div>
                  <input type="email" placeholder="Enter email" id="email-input" required/>
                 <div class="first-password">
-                <input type="password" placeholder="Enter password (minimum of 8 characters)" id="pass1" oninput="passwordCharCheck(event)"><span id="error-message2">Password must contain 8 characters and above</span></div>
+                <input type="password" placeholder="Enter password (minimum of 8 characters)" id="pass1" oninput="passwordCharCheck(event)" required/><span id="error-message2">Password must contain 8 characters and above</span></div>
                 <div class="cofirm-password">
-                <input type="password" placeholder="Confirm password (minimum of 8 characters)" id="pass2" oninput="passwordConfirmHandler(event)"  required><span id="error-message">Password does not match</span>
+                <input type="password" placeholder="Confirm password (minimum of 8 characters)" id="pass2" oninput="passwordConfirmHandler(event)"  required/><span id="error-message">Password does not match</span>
                 </div>
                 <button type="submit">Sign Up</button>
                 <p>Ensure you fill in your details correctly</p> 

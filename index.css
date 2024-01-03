@@ -9,7 +9,8 @@ body {
 
 .container {
     margin-top: 15px;
-    height: 156px;
+    max-height: 100%;
+    
 }
 
 .heading h1 {
@@ -17,13 +18,13 @@ body {
     color: white;
     margin-top: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 45px;
 }
 
 .main-content {
     background-color: white;
     min-height: 90vh;
-    width: 650px;
+    width: 60%;
     margin: 10px auto 0px auto;
     border: 2px solid darkmagenta;
     border-radius: 12px;
@@ -32,12 +33,14 @@ body {
 .main-content h1 {
     text-align: center;
     margin-top: 10px;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .first-password span {
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     margin-left: 3px;
     margin-top: 5px;
     display: none;
@@ -54,7 +57,7 @@ body {
 .first-input span {
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     margin-left: 3px;
     margin-top: 5px;
     display: none;
@@ -82,34 +85,23 @@ body {
 .input1 {
     /* background-color: red; */
     height: 55px;
-    width: 575px;
+    width: 80%;
     margin: 15px auto 0px auto;
 }
-.first-input input {
-    width: 555px;
-    height: 55px;
-    border: 1px solid white;
-    border-bottom-color: black;
-    font-size: 14px;
-    padding-left: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    padding-right: 0px; 
-    color: black;
-}
+
 .input1 input {
-    width: 555px;
-    height: 55px;
+    width: 100%;
+    height: 75px;
     border: 1px solid white;
     border-bottom-color: black;
-    font-size: 14px;
+    font-size: 25px;
     padding-left: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 35px;
     padding-right: 0px;
     color: black;
-    margin-top: 20px;
+    margin-top: 30px;
+    /* background-color: red; */
 }
 
 .input1 input:focus {
@@ -118,13 +110,14 @@ body {
 
 .input1 button {
     width: 100%;
+    height: 75px;
     padding: 15px;
     background-color: darkmagenta;
     border-radius: 19px;
     border: none;
     margin-top: 55px;
     color: white;
-    font-size: 17px;
+    font-size: 25px;
     cursor: pointer;
 }
 
@@ -143,14 +136,14 @@ body {
 
 
 .cofirm-password input {
-    width: 555px;
-    height: 55px;
+    width: 100%;
+    height: 75px;
     border: 1px solid white;
     border-bottom-color: black;
-    font-size: 14px;
+    font-size: 24px;
     padding-left: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 15px;
+    margin-top: 30px;
     /* margin-bottom: 2px;  */
     padding-right: 0px;
     color: black;
@@ -158,7 +151,6 @@ body {
 }
 
 .cofirm-password input {
-
     margin-bottom: 0px;
     margin-left: 0px;
 
@@ -167,7 +159,7 @@ body {
 .cofirm-password span {
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 13px;
+    font-size: 20px;
     margin-left: 3px;
     margin-top: 5px;
     display: none;
@@ -180,141 +172,210 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .input1 p {
-
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
 }
 
 
 /* Responsiveness */
-@media screen and (max-width: 320px) {
-
-        
-        html, body {
-            width: 100%;
-            height: 784px;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
+ @media screen and (max-width: 1314px) {
     .main-content {
-        max-width: 100%;
-        max-height: 100%;
-        min-height: 100vh;
-        border: none;
-        margin: 15px auto 0px auto;
+        min-height: 130vh;
+        width: 90%;
     }
-
+    .cofirm-password input {
+        font-size: 20px;
+        margin-top: 35px;
+    }
     .input1 input {
-        max-width: 87vi;
-        margin-left: 20px;
-        height: 45px;
-        font-size: 25px;
-        margin-top: 17px;
+        font-size: 20px;
         margin-bottom: 25px;
-        padding-right: 0px;
-        padding-left: 2px;
-        max-height: fit-content;
-    }
-    .first-input{
-       
-        max-width: 83vi;
-        height: 35px;
-        font-size: 11px;
-        margin-top: 0px;
-        margin-bottom: 45px;
-        padding-right: 0px;
-        
-       
-    }
-    .heading h1 {
-        color: white;
-        max-width: 100%;
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .input1 button {
-        width: 100vi;
-        text-align: center;
-        padding: 15px;
-        margin-top: 25px;
-        color: white;
-        font-size: 13px;
-        cursor: pointer;
-    }
-
-    .input1 p {
-        width: 98vi;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 13px;
-    }
-
-    .main-cont-header h1 {
-       font-family: Verdana, Geneva, Tahoma, sans-serif;
-       font-size: 25px;
-       margin-top: 40px;
-       padding-top: 45px;
-
-    }
-    .main-content hr {
-        max-width: 86vi;
-        margin-left: 20px;
-    }
-
-    .heading h1 {
-        text-align: center;
-        margin-top: 15px;
-    
-    }
-    .message p {
-        text-align: center;
-        margin-top: 70px;
-    }
-    .first-input span {
-        color: red;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 11px;
-        margin-left: 20px;
-        margin-top: 5px;
-        display: none;
-        margin-top: -21px;
-    }
-    .first-password span {
-        color: red;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 11px;
-        margin-left: 20px;
-        margin-top: 5px;
-        display: none;
-        margin-top: -21px;
+        margin-top: 35px;
     }
     .cofirm-password span {
-        color: red;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 11px;
-        margin-left: 20px;
-        display: none;
-        margin-top: -21px;
-        margin-bottom: 10px;
+        margin-top: -20px;
     }
-    .clear-btn {
-        width: 70%;
-        height: 100%;
-        margin: 10px auto 0px auto;
-        display: none;
-    } 
     
-    .clear-btn button {
-        width: 100%;
-        background-color: darkmagenta;
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 12px;
-        border-radius: 10px;
-        border: none;
-        padding: 7px;
-        cursor: pointer;
+    .first-input span {
+        margin-top: 5px;
+        margin-top: -20px;
     }
-}
+    .first-password span {
+        margin-top: 5px;
+        margin-top: -20px;
+    }
+ }
+
+ @media screen and (max-width: 792px) {
+    .main-content {
+        min-height: 130vh;
+        width: 99%;
+    }
+    .cofirm-password input {
+        font-size: 17px;
+        margin-top: 35px;
+    }
+    .input1 input {
+        font-size: 17px;
+        margin-bottom: 25px;
+        margin-top: 35px;
+    }
+    .cofirm-password span {
+        margin-top: -20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .first-input span {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .first-password span {
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .heading h1 {
+        font-size: 35px;
+    }
+    .main-content h1 {
+        font-size: 35px;
+    }
+    .input1 p {
+        font-size: 20px;
+    }
+ }
+
+ @media screen and (max-width: 600px) {
+    .main-content {
+        min-height: 130vh;
+        width: 99%;
+    }
+    .cofirm-password input {
+        font-size: 15px;
+        margin-top: 35px;
+    }
+    .input1 input {
+        font-size: 15px;
+        margin-bottom: 25px;
+        margin-top: 35px;
+    }
+    .cofirm-password span {
+        margin-top: -20px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .first-input span {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .first-password span {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .heading h1 {
+        font-size: 35px;
+    }
+    .main-content h1 {
+        font-size: 35px;
+    }
+    .input1 p {
+        font-size: 18px;
+    }
+    .input1 button {
+        height: 65px;
+        font-size: 20px;
+    } 
+ }
+
+ @media screen and (max-width: 448px) {
+    .main-content {
+        min-height: 91vh;
+        width: 99%;
+    }
+    .cofirm-password input {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .input1 input {
+        font-size: 15px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        height: 45px;
+    }
+    .cofirm-password span {
+        margin-top: -10px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .first-input span {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+    .first-password span {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+    .heading h1 {
+        font-size: 25px;
+    }
+    .main-content h1 {
+        font-size: 28px;
+    }
+    .input1 p {
+        font-size: 18px;
+    }
+    .input1 button {
+        height: 65px;
+        font-size: 20px;
+    } 
+ }
+
+ @media screen and (max-width: 375px) {
+    .main-content {
+        min-height: 91vh;
+        width: 99%;
+    }
+    .cofirm-password input {
+        font-size: 15px;
+        margin-top: 25px;
+        padding-left: 2px;
+    }
+    .input1 input {
+        font-size: 11px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        padding-left: 2px;
+        height: 45px;
+    }
+    .cofirm-password span {
+        margin-top: -10px;
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .first-input span {
+        font-size: 9px;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+    .first-password span {
+        font-size: 9px;
+        font-weight: bold;
+        margin-top: -10px;
+    }
+    .heading h1 {
+        font-size: 25px;
+    }
+    .main-content h1 {
+        font-size: 28px;
+    }
+    .input1 p {
+        font-size: 15px;
+    }
+    .input1 button {
+        height: 45px;
+        margin-top: 10px;
+        font-size: 15px;
+    } 
+ }
+
